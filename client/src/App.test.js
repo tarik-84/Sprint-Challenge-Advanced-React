@@ -7,3 +7,16 @@ it('renders without crashing', () => {
   ReactDOM.render(<App />, div);
   ReactDOM.unmountComponentAtNode(div);
 });
+
+test('App title and header is appearing ', () => {
+  // Arrange
+  const {getByText} = render(<App/>)
+  // Act
+// nothing to do here
+  //Assert
+  const title = getByText(/Women's World Cup /i);
+  expect(title).toBeVisible();
+
+  const header = getByText(/Ranked according to popularity/i);
+  expect(header).toBeVisible();
+});
