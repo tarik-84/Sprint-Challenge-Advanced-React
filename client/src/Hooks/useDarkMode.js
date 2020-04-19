@@ -1,9 +1,9 @@
 import { useEffect } from "react";
-import  useLocoalStorage  from './useLocoalStorage';
+import  useLocoalStorage  from './useLocalStorage';
 
 
-const useDarkMode = (key) => {
-    const [darkMode, setDarkMode] = useLocoalStorage (key);
+const useDarkMode = (key, initialValue) => {
+    const [darkMode, setDarkMode] = useLocoalStorage (key, initialValue);
     useEffect (() => {
         darkMode ? document.body.classList.add('dark-mode') : document.body.classList.remove('dark-mode')
     }, [darkMode])

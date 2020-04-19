@@ -145,12 +145,12 @@ h1 {
 }
 
 h2 {
-  font-size: 1.8rem;
+  font-size: 2rem;
   padding: 5px;
 }
 
 h4 {
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   padding: 5px;
 }
 
@@ -188,7 +188,7 @@ img {
 }
 
 .dark-mode__toggle {
-  background: papayawhip;
+  background: white;
   border-radius: 50px;
   border: 1px solid black;
   height: 20px;
@@ -197,7 +197,7 @@ img {
 }
 
 .toggle {
-  background: #f68819;
+  background: black;
   border-radius: 50px;
   height: 18px;
   left: 0;
@@ -208,14 +208,38 @@ img {
 
 .toggled {
   left: 18px;
+  background: red;
 }
 
 .dark-mode {
-  color: #fff;
-  background-color: #313843;
+  color: whitesmoke;
+  background-color: #121212;
 
   .navbar {
     background-color: #1F2022;
     border: none;
   }
+
+  .card {
+    background-color: #1F2022;
+  }
+}
+
+.player {
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: whitesmoke;
+  margin: 2%;
+  border: solid 1px black;
+  border-radius: 5px;
+  width: 400px;
+  height: 25vh;
 }
